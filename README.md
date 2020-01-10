@@ -1,4 +1,6 @@
-# murmurhash-node
+# murmurhash32-node
+
+NOTE: Forked from [murmurhash-node](https://github.com/flagUpDown/murmurhash-node)
 
 Murmur哈希是一种非加密散列函数，适用于一般的基于散列的查找。
 
@@ -9,7 +11,7 @@ Murmur哈希是一种非加密散列函数，适用于一般的基于散列的�
 使用npm进行下载
 
 ```
-npm install murmurhash-node --save
+npm install murmurhash32-node --save
 ```
 
 ## 使用
@@ -46,22 +48,5 @@ murmurhash32.v2('!@#$%^&*()_+-='); // 1977745461
 murmurhash32.v2(Buffer.from('7468697320697320612074c3a97374', 'hex')); // 346350001
 murmurhash32.v2(Buffer.from('this is a tést')); // 346350001
 murmurhash32.v2('this is a tést'); // 346350001
-```
-
-支持返回64位的hash值。seed默认为0，seed支持使用字符串形式的数字
-
-```javascript
-const murmurhash64 = require("murmurhash-node").bit64;
-
-murmurhash64.Av2("test"); // 0x2f4a8724618f4c63
-murmurhash64.Av2("hhhh", '0xfffff'); // 0x95218213350c4a20
-```
-
-支持返回128位的hash值。seed默认为0，seed支持使用字符串形式的数字
-
-```javascript
-const murmurhash128 = require("murmurhash-node").bit128;
-
-murmurhash128.x64v3("test"); // 0xac7d28cc74bde19d9a128231f9bd4d82
 ```
 
