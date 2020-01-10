@@ -1,6 +1,6 @@
 {
-  "name": "murmurhash-node-32",
-  "version": "1.0.0",
+  "name": "murmurhash32-node",
+  "version": "1.0.1",
   "main": "lib/murmurhash-node.js",
   "description": "JavaScript implementation of the murmurhash algorithm - 32bit",
   "scripts": {
